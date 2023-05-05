@@ -10,9 +10,12 @@ namespace Fan
     {
         static void Main(string[] args)
         {
-            Fan fan1 = new Fan();
-            Console.WriteLine(fan1.Speed);
-            fan1.PrintInfo();
+            Fan Fan1 = new Fan(Fan.Fast, true, 10, "yellow");
+            Console.WriteLine(Fan1.ToString());
+            Fan Fan2 = new Fan(Fan.Medium, false, 5, "blue");
+            Console.WriteLine(Fan2.ToString());
+            Console.WriteLine("=======================");
+            
         }
     }
 }
